@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import fire from './config/Fire';
+import User from './User';
 
 class Home extends React.Component {
   constructor(props) {
@@ -108,7 +108,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {this.state.user ? (<Home/>) : <Login/>}
+        {this.state.user ? (<User/>) : <Login/>}
       </div>
     );
   }
